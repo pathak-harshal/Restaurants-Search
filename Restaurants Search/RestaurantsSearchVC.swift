@@ -34,7 +34,6 @@ class RestaurantsSearchVC: UIViewController {
                     self.restaurantResult.addResult(isForFirstTime: self.isForFirstTime, results: businesses)
                     DispatchQueue.main.async {
                         self.tblRestaurants.reloadData()
-                        self.showToast(message: "Total \(self.restaurantResult.countOfRestaurants()) out of \(self.mainResponse?.totalCount ?? 0) Restaurants")
                     }
                     
                 }
@@ -93,7 +92,6 @@ class RestaurantsSearchVC: UIViewController {
                 self.restaurantResult.addResult(isForFirstTime: self.isForFirstTime, results: businesses)
                 DispatchQueue.main.async {
                     self.tblRestaurants.reloadData()
-                    self.showToast(message: "Total \(self.restaurantResult.countOfRestaurants()) out of \(self.mainResponse?.totalCount ?? 0) Restaurants")
                     self.refreshControl.endRefreshing()
                 }
                 
@@ -128,7 +126,6 @@ class RestaurantsSearchVC: UIViewController {
                     self.restaurantResult.addResult(isForFirstTime: self.isForFirstTime, results: businesses)
                     DispatchQueue.main.async {
                         self.tblRestaurants.reloadData()
-                        self.showToast(message: "Total \(self.restaurantResult.countOfRestaurants()) out of \(self.mainResponse?.totalCount ?? 0) Restaurants")
                         self.offset = self.restaurantResult.numberOfRows(0)
                         // Stop the loading indicator
                         self.loadingMoreView!.stopAnimating()
