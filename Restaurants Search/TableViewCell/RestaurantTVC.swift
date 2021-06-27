@@ -38,9 +38,9 @@ class RestaurantTVC: UITableViewCell {
         lblRating.text = "\(model.rating ?? 0.0)"
         guard let status = model.is_closed else { return }
         if status {
-            lblStatus.text = "Currently OPEN"
-        } else {
             lblStatus.text = "Currently CLOSE"
+        } else {
+            lblStatus.text = "Currently OPEN"
         }
         
         lblAddress.text = getdistanceWithAddress(distance: model.distance, location: model.location)
