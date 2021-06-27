@@ -37,7 +37,7 @@ class RestaurantsSearchVC: UIViewController {
                     }
                     
                 } else {
-                    print("Please Add Bearer token in ApiManager.swift file")
+                    self.showToast(message: "Please Add Bearer token in ApiManager.swift file")
                 }
             }
         }
@@ -98,7 +98,7 @@ class RestaurantsSearchVC: UIViewController {
                 }
                 
             } else {
-                print("Please Add Bearer token in ApiManager.swift file")
+                self.showToast(message: "Please Add Bearer token in ApiManager.swift file")
             }
         }
     }
@@ -138,7 +138,7 @@ class RestaurantsSearchVC: UIViewController {
                     }
                     
                 } else {
-                    print("Please Add Bearer token in ApiManager.swift file")
+                    self.showToast(message: "Please Add Bearer token in ApiManager.swift file")
                 }
             }
         } else {
