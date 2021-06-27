@@ -163,7 +163,6 @@ extension RestaurantsSearchVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellRestaurants", for: indexPath) as! RestaurantTVC
-        print("\(indexPath.row+1)")
         let business = self.restaurantResult.modelAt(indexPath.row)
         cell.setData(withObject: business)
         return cell
