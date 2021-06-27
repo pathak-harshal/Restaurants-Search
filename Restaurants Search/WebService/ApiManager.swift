@@ -9,7 +9,8 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-var authHeaders: HTTPHeaders = ["Authorization": "Bearer XPFgzKwZGK1yqRxHi0d5xsARFOLpXIvccQj5jekqTnysweGyoIfVUHcH2tPfGq5Oc9kwKHPkcOjk2d1Xobn7aTjOFeop8x41IUfVvg2Y27KiINjYPADcE7Qza0RkX3Yx"]
+//FIXME: Add Bearer token below
+var authHeaders: HTTPHeaders = ["Authorization": "Bearer <#T## Bearer Token #>"]
 
 struct Resource<T> {
     let url: URL

@@ -36,6 +36,8 @@ class RestaurantsSearchVC: UIViewController {
                         self.tblRestaurants.reloadData()
                     }
                     
+                } else {
+                    print("Please Add Bearer token in ApiManager.swift file")
                 }
             }
         }
@@ -95,6 +97,8 @@ class RestaurantsSearchVC: UIViewController {
                     self.refreshControl.endRefreshing()
                 }
                 
+            } else {
+                print("Please Add Bearer token in ApiManager.swift file")
             }
         }
     }
@@ -133,6 +137,8 @@ class RestaurantsSearchVC: UIViewController {
                         self.isMoreDataLoading = false
                     }
                     
+                } else {
+                    print("Please Add Bearer token in ApiManager.swift file")
                 }
             }
         } else {
